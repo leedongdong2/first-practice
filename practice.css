@@ -1,0 +1,225 @@
+input::placeholder {
+    color: black;
+    font-style: bold;
+    opacity: 0.7;
+  }
+
+.bgImage { 
+    width: 100%;
+    height: 100%;
+    top : 0;
+    left : 0;
+    position: absolute;
+    z-index: -1;
+    animation: fadein 1s;
+    opacity: 0.5;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+.topGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+}
+.topCenter{
+   text-align: center;
+   text-shadow: 2px 2px 3px black;
+  
+}
+.mainTitle{
+    font-size: 50px;
+   margin-top: 120px;
+    text-align: center;
+   
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
+}
+.outTitle{
+    color: whitesmoke;
+    transition: color 0.5s ease-in-out;
+}
+
+.inTitle{
+    color: coral;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn {
+    cursor:default;
+}
+
+.loginGrid{
+    display: grid;
+    grid-template-rows:auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.inputId {
+    padding: 0;
+  
+    width: 250px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    outline: none;    
+    
+}
+
+.inputIdClick {
+    padding: 0;
+   
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid steelblue;
+    background: transparent;
+    outline: none;  
+    opacity: 0.5;
+}
+
+.inputPassWard{
+    padding: 0;
+    width: 250px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    outline: none; 
+    
+}
+
+.inputPassWardClick
+{
+    padding: 0;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid steelblue;
+    background: transparent;
+    outline: none;  
+    opacity: 0.5;
+}
+
+.logIn{
+    border: 1px solid black;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.signUp {
+    border: 1px solid black;
+    margin-left: 5px;
+    padding:5px;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+.logIn_position{
+
+    margin-top:40px;
+    opacity: 0.8;
+}
+
+.Log {
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    opacity: 0.8;
+    width: 100px;
+}
+
+.LogOverOut{
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:rgba(111, 255, 188, 0.822);
+    border: 1px solid black;
+    opacity: 0.8;
+    width: 100px;
+}
+
+.LogOver{
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    opacity: 0.8;
+    width: 100px;
+
+}
+
+.Sign {
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    margin-right: 165px;
+    opacity: 0.8;
+    width: 100px;
+
+}
+
+.SignOverOut {
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:rgba(111, 255, 188, 0.822);
+    border: 1px solid black;
+    margin-right: 165px;
+    opacity: 0.8;
+    width: 100px;
+
+}
+
+.SignOver {
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    margin-right: 165px;
+    opacity: 0.8;
+    width: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn{
+    cursor: pointer;
+}
+.under{
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.4;
+    font-size: 10px;
+}
