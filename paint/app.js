@@ -51,6 +51,10 @@ function changeColor(ev){
    ctx.strokeStyle= color;
 }
 
+function handleRangeChange(ev){
+    const size= ev.target.value;
+    ctx.lineWidth = size;
+}
 
 
 if(canvas){                //마우스가 움직일때
@@ -64,6 +68,8 @@ if(canvas){                //마우스가 움직일때
 Array.from(colors).forEach(colors =>colors.addEventListener("click",changeColor))
 console.log(Array.from(colors))
 
+
 if(range){
-    
+               //인풋이벤트 사용자가 값을 변경할떄마다 일어나는 이벤트
+    range.addEventListener("input",handleRangeChange);
 }
