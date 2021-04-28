@@ -5,7 +5,7 @@ body{
     display:flex;
     flex-direction:column;
     align-items: center;
-    padding-top: 30px;
+    padding: 50px 0  ;
 }
 
 .canvas{
@@ -18,7 +18,34 @@ body{
 .controls{
 margin-top:20px;
 margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
+
+.controls .controls_btns{
+    margin-bottom: 20px;
+    margin-top:5px;
+}
+
+.controls_btns button{
+    /*all:unset으로 기본 데코를 다지우고 패딩등 범위를 주어 내가 데코할수있다*/
+ all:unset;
+ cursor: pointer;
+ background-color: white;
+ padding:5px 0px;
+ width: 80px;
+ text-align: center;
+ border-radius: 5px;
+ box-shadow: 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0,0,0,0.2);
+ border:2px solid rgba(0,0,0,0.2);
+ color:rgba(0,0,0,0.8);
+ /*문자를 트랜스폼한다   대문자로 만들수 있다 */
+ text-transform: uppercase;
+ font-weight: 600;
+ font-size: 12pt;
+}
+
 .controls .controls_colors{
     display: flex;
 }
@@ -27,6 +54,15 @@ margin-bottom: 20px;
     width:50px;
     height:50px;
     border-radius: 25px;
+    cursor: pointer;
     box-shadow: 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0,0,0,0.2)
 }
 
+/*button이 움직일떄 반응할때 크기를 줄였다 늘리는 액션을 넣어준다*/
+.controls_btns button:active{
+    transform: scale(0.98);
+}
+
+.controls .controls_range{
+    margin-bottom:20px;
+}
